@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title" contenteditable="true">BOOK-1</div>
+        <div class="menu">
+            <p class="file">File</p>
+            <p class="selected">Home</p>
+            <p>Edit</p>
+            <p>Insert</p>
+            <p>Help</p>
+        </div>
+        <div class="menu_options">
+            <div class="BUI">
+                <!-- <span class="material-icons">content_cut</span>
+                <span class="material-icons">content_copy</span>
+                <span class="material-icons">content_paste</span> -->
+                <span class="material-icons font">format_bold</span>
+                <span class="material-icons font">format_italic</span>
+                <span class="material-icons font">format_underlined</span>
+            </div>
+            <div class="fontstyle">
+                <select id="cell-font-family " class="Fstyle">
+                    <option value="ariel">Ariel</option>
+                    <option value="times new Roman">times_roman</option>
+                    <option value="open sans">open_sans</option>
+                    <option value="rhythm">rhythm</option>
+                    <option value="sharma">sharma</option>
+                </select>
+                <select id="font_size " class="Fstyle">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+            <div class="alignment">
+                <span class="material-icons align">format_align_left</span>
+                <span class="material-icons align">format_align_justify</span>
+                <span class="material-icons align">format_align_right</span>
+            </div>
+            <div class="colors">
+                <span class="material-icons cccc"> format_color_text </span>
+                <span class="material-icons cccc"> format_color_fill </span>
+            </div>
+        </div>
+        <div class="formula_bar">
+            <input id="selected_cell"></input><input id="selected_cell_formula"></input>
+        </div>
+        <div class="grid">
+            <div class="empty_cell"></div>
+            <div class="columns"></div>
+            <div class="rows"></div>
+            <div class="cell_container"></div>
+        </div>
+        <div class="sheets_bar">
+            <div class=" sheet sheets1 open">SHEET_1</div>
+            <div class=" sheet sheets2">SHEET-2</div>
+        </div>
+    </div>
+    <!-- <div class="BOXOPEN">
+        <div class="box save">save</div>
+        <div class="box ">sd</div>
+        <div class="box clear">clear</div>
+
+    </div> -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
